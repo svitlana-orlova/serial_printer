@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Installing libserialport-dev
-      run: apt update && apt install libserialport-dev
+      run: sudo apt update && sudo apt install libserialport-dev
 
     - name: Run make
       run: make
